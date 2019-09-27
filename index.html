@@ -4,9 +4,108 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Test</title>
+    <title>表格小练习</title>
+    <style>
+        #app{
+            width: 600px;
+            height: 900px;
+            margin: 50px auto;
+        }
+
+        fieldset{
+            border: 1px solid orangered;
+            margin-bottom: 20px;
+        }
+
+        fieldset input {
+            height: 30px;
+            width: 200px;
+            margin: 10px 0;
+            outline: none
+        }
+
+        table {
+            width: 100%;
+            border: 2px solid orange;
+            text-align: center;
+        }
+
+        table thead{
+            background-color: orangered;
+            color: #ffffff;
+        }
+
+        table tr{
+            line-height: 40px;
+        }
+    </style>
 </head>
 <body>
-    <h1>This is Testing!!</h1>
+    <div id="app">
+        <!-- 第一部分 -->
+        <fieldset>
+            <!-- 分组名称 -->
+            <legend>学生信息录入系统</legend>
+            <div>
+                <span>姓名:</span>
+                <input type="text" placeholder="请输入姓名">
+            </div>
+            <div>
+                <span>年龄:</span>
+                <input type="number" placeholder="请输入年龄">
+            </div>
+            <div>
+                <span>性别:</span>
+                <select name="sex" id="sex">
+                    <option value="男"">男</option>
+                    <option value="女"">女</option>
+                </select>
+            </div>
+            <div>
+            <div>
+                <span>手机:</span>
+                <input type="text" placeholder="请输入手机号码">
+            </div>
+            <div>
+                <input type="button" value="创建新用户">
+            </div>
+        </fieldset>
+        <!-- 第二部分 -->
+        <table>
+                <thead>
+                    <tr>
+                        <th>姓名</th>
+                        <th>性别</th>
+                        <th>年龄</th>
+                        <th>手机</th>
+                        <th>删除</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Coder</td>
+                        <td>男</td>
+                        <td>22</td>
+                        <td>18905552122</td>
+                        <td><input type="button" value="删除"></td>
+                    </tr>
+                    <tr>
+                        <td>Coder</td>
+                        <td>男</td>
+                        <td>22</td>
+                        <td>18905552122</td>
+                        <td><input type="button" value="删除"></td>
+                    </tr>
+                    <tr>
+                        <td>Coder</td>
+                        <td>男</td>
+                        <td>22</td>
+                        <td>18905552122</td>
+                        <td><input type="button" value="删除"></td>
+                    </tr>
+                </tbody>
+            </table>
+    </div>
+    
 </body>
 </html>
