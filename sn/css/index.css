@@ -1,0 +1,668 @@
+/* 通用样式 start */
+
+
+/* 通用样式 end */
+
+
+/* 广告 start */
+.sn-top-banner {
+    position: relative;
+    background-color: #01008a;
+}
+
+.sn-top-banner .top-banner-center {
+    /* position: absolute; */
+    height: 10rem;
+}
+
+.sn-top-banner .top-banner-center img {
+    width: 100%;
+}
+
+.sn-top-banner .banner-close {
+    position: absolute;
+    top: 0.3rem;
+    right: 4rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    background: url("./../images/close-banner.png") 0 0;
+}
+
+.sn-top-banner .banner-close:hover {
+    background-position: 0 -1.5rem;
+}
+/* 广告 end */
+
+
+/* 顶部通栏 start */
+.sn-top-toolbar {
+    background-color: #f5f5f5;
+    height: 3.5rem;
+    line-height: 3.5rem;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.sn-top-toolbar>div {
+    height: 100%;
+}
+
+.sn-top-toolbar li {
+    float: left;
+    /* line-height: 3.5rem; */
+    padding: 0 2rem 0 0.1rem;
+}
+
+.sn-top-toolbar li a{
+    padding-left: 1.4rem;
+}
+
+.sn-top-toolbar>div .fl ul .locate {
+    position: relative;
+}
+
+.sn-top-toolbar>div .fl ul .locate a::after {
+    content: '';
+    position: absolute;
+    width: 1rem;
+    height: 1.2rem;
+    top: 0;
+    left: 0;
+
+    background: url('../images/index2.png') -32.29rem -15.3rem;
+}
+
+.sn-top-toolbar .down {
+    /* 子绝父相 */
+    position: relative;
+}
+
+.sn-top-toolbar .down i {
+    position: absolute;
+    right: 0.4rem;
+    top: 1.8rem;
+    width: 1.5rem;
+    height: 1.5rem;
+
+    /* 超出隐藏 */
+    overflow: hidden;
+}
+
+.sn-top-toolbar .down i s {
+    position: absolute;
+    left: 0;
+    top: -1.9rem;
+    font-size: 1.4rem;
+    /* margin-left: 0.3rem; */
+    color: #bbb;
+
+}
+
+.sn-top-toolbar .down img {
+    width: 1.5rem;
+    vertical-align: middle;
+}
+
+/* 顶部通栏 end */
+
+
+/* 顶部搜索 start */
+.sn-top-search {
+    background-color: #fff;
+    height: 11rem;
+}
+
+.sn-top-search .logo-set .main-logo{
+    width: 19rem;
+    height: 9rem;
+    background: url('../images/logo.png') center no-repeat;
+}
+
+.sn-top-search .logo-set .sub-logo{
+    width: 16rem;
+    height: 10rem;
+    background: url('../images/sn-.gif') center no-repeat;
+}
+
+.sn-top-search .logo-set .main-logo,
+.sn-top-search .logo-set .sub-logo {
+    float: left;
+    background-size: contain;
+}
+
+.sn-top-search .search-input {
+    width: 53.8rem;
+    height: 3.6rem;
+    float: left;
+    padding-top: 3rem;
+    padding-left: 2rem;
+}
+
+.sn-top-search .search-input input:first-child {
+    width: 35rem;
+    height: 3.6rem;
+    float: left;
+    border: 0.2rem solid #ffaa00;
+    box-sizing: border-box;
+    padding-left: 0.5rem;
+}
+
+.sn-top-search .search-input input:last-child {
+    width: 12rem;
+    height: 3.6rem;
+    background-color: #ffaa00;
+    color: #fff;
+    float: left;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.sn-top-search .search-more-link {
+    width: 53.8rem;
+    height: 1.8rem;
+    padding-left: 2rem;
+    float: left;
+}
+
+.sn-top-search .search-more-link li{
+    float: left;
+    margin: 1rem 1rem 0 0;
+}
+
+.sn-top-search .search-more-link li + li {
+    border-left: 1px solid #ddd;
+    padding-left: 0.5rem;
+}
+/* 顶部搜索 end */
+
+
+/* 中部导航 start */
+.sn-nav {
+    width: 100%;
+    height: 3.8rem;
+    background-color: #fff;
+}
+
+.sn-nav>div {
+    /* 开启伸缩布局 */
+    display: flex;
+}
+
+.sn-nav>div .sn-nav-menu {
+    width: 16.3rem;
+    height: 3.8rem;
+    background-color: #ff9900;
+}
+
+.sn-nav>div .sn-nav-menu a {
+    line-height: 3.8rem;
+    font-size: 1.3rem;
+    color: #fff;
+    padding-left: 1.5rem;
+    box-sizing: border-box;
+    font-weight: bold;
+
+    position: relative;
+}
+
+.sn-nav>div .sn-nav-menu a::before {
+    content: '';
+    position: absolute;
+    top: 0.25rem;
+    left: 0.3rem;
+    width: 1.2rem;
+    height: 1rem;
+    background: url('../images/index2.png') 0 0;
+}
+
+.sn-nav>div .sn-nav-items {
+    flex: 1;
+}
+
+.sn-nav>div .sn-nav-items ul li {
+    float: left;
+    box-sizing: border-box;
+    padding: 0 1.2rem;
+    line-height: 3.8rem;
+    font-weight: bold;
+}
+
+.sn-nav>div .sn-nav-items ul .hot{
+    position: relative;
+}
+
+.sn-nav>div .sn-nav-items ul .hot a::after {
+    content: '';
+    position: absolute;
+    width: 1.2rem;
+    height: 1.8rem;
+    top: 0rem;
+    right: 0rem;
+    background: url('../images/index2.png') -28.7rem -17.4rem;;
+}
+
+.sn-nav>div .sn-nav-items ul li a {
+    font-size: 1.6rem;
+}
+
+.sn-nav .tips {
+    float: right;
+}
+
+.sn-nav .tips img {
+    height: 3.5rem;
+    width: 16.8rem;
+}
+/* 中部导航 end */
+
+
+/* 轮播图 start */
+.sn-rotation {
+    height: 48.2rem;
+    width: 100%;
+    background-color: rgb(142, 32, 251);;
+}
+
+.sn-rotation .sn-rotation-left {
+    float: left;
+    width: 16.3rem;
+    height: 48rem;
+    background-color: #333;
+
+    /* 双飞翼布局通过 margin控制 */
+    margin-left: -100%;
+}
+
+.sn-rotation .sn-rotation-left .index-list{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    /* 主轴方向 */
+    flex-direction: column;
+    /* 平均分配 */
+    justify-content: space-evenly;
+
+    cursor: pointer;
+}
+
+.sn-rotation .sn-rotation-left .index-list li {
+    /* cursor: pointer; */
+    padding-left: 1.2rem;
+}
+
+.sn-rotation .sn-rotation-left .index-list li a {
+    color: #fff;
+}
+
+.sn-rotation .sn-rotation-left .index-list li a:hover {
+    color: #ff9900;
+}
+
+.sn-rotation .sn-rotation-left .index-list li em {
+    /* background-color: #d8d8d8; */
+    border-left: 1px solid #d8d8d8;
+    margin-left: 0.5rem;
+    /* color: #333; */
+}
+
+/* 中间 */
+.sn-rotation .sn-center {
+    width: 100%;
+    height: 48rem;
+    float: left;
+}
+
+.sn-center .sn-center-w {
+    margin: 0 17rem 0 16.3rem;
+    background-color: red;
+    height: 48rem;
+
+    position: relative;
+}
+
+.sn-center .sn-center-w img {
+    width: 100%;
+    height: 48rem;
+}
+
+.sn-center .sn-center-w .contral .c-prev,
+.sn-center .sn-center-w .contral .c-next{
+    background-color: rgba(0,0,0,0.4);
+    position: absolute;
+    top: 50%;
+
+    /* 向Y轴移动 */
+    transform: translateY(-50%);
+    width: 3rem;
+    height: 6rem;
+
+    /* 居中显示 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* text-align: center;
+    line-height: 6rem; */
+}
+
+.sn-center .sn-center-w .contral i {
+    color: #fff;
+    font-weight: bold;
+    font-size: 3.5rem;
+}
+
+.sn-center .sn-center-w .contral .c-prev {
+    left: 0;
+}
+
+.sn-center .sn-center-w .contral .c-next {
+    right: 0;
+}
+
+.sn-rotation .sn-center .sn-center-w .c-bottom{
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.sn-rotation .sn-center .sn-center-w .c-bottom .current {
+    background-color: #ff9900;
+}
+
+.sn-rotation .sn-center .sn-center-w .c-bottom li{
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: #fff;
+    float: left;
+    margin-left: 0.8rem;    
+    border-radius: 50%;
+}
+
+/* 右侧 */
+.sn-rotation .sn-rotation-right {
+    float: left;
+    height: 48rem;
+    width: 17rem;
+    background-color: #fff;
+    margin-left: -17rem;
+
+
+    /* 开启伸缩布局 */
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* align-items: center; */
+    /* justify-content: space-evenly; */
+}
+
+.sn-rotation-right .header {
+    border-bottom: 1px solid #f2f2f2;
+}
+
+.sn-rotation-right .header .logo{
+    width: 4rem;
+    height: 4rem;
+    margin: 2rem auto;
+    background: url('../images/index2.png') -96px -25px no-repeat;
+}
+
+.sn-rotation-right .header p {
+    text-align: center;
+    margin: 0 0 0.5rem 0;
+}
+
+.sn-rotation-right .header ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sn-rotation-right .header ul li {
+    width: 6.5rem;
+    height: 1.7rem;
+    line-height: 1.7rem;
+    text-align: center;
+    margin: 10px 11px 0.5rem 9px;
+}
+
+.sn-rotation-right .header ul li:first-child {
+    
+    border: 1px solid #ff9900;
+    background-color: #fff;
+}
+
+.sn-rotation-right .header ul .super{
+    width: 6.8rem;
+    height: 2rem;
+    background: url('../images/index2.png') -295px -251px;
+}
+
+.sn-rotation-right .header ul li:nth-child(3) {
+    background: url('../images/index2.png') -670px -256px;
+}
+
+.sn-rotation-right .header ul li:last-child {
+    background: url('../images/index2.png') -670px -288px;
+}
+
+.sn-rotation-right .header ul li:first-child a {
+    color: #ffaa00;
+}
+
+.sn-rotation-right .center ul li {
+    padding: 1rem;
+}
+
+.sn-rotation-right .center ul li span{
+    color: #ff6600;
+    margin-right: 0.5rem;
+}
+
+.sn-rotation-right .footer ul{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.sn-rotation-right .footer ul li {
+    height: 10rem;
+    width: 68px;
+    box-sizing: border-box;
+    border: 1px solid #f2f2f2;
+}
+
+.sn-rotation-right .footer ul li a {
+    display: inline-block;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sn-rotation-right .footer ul li a [class^=sn-]{
+    padding: 1.5rem;
+    /* line-height: 6rem; */
+    font-size: 2.4rem;
+    text-align: center;
+}
+
+.sn-rotation-right .footer ul li a p {
+    font-size: 1.6rem;
+    text-align: center;
+}
+/* 轮播图 end */
+
+
+/* 主要内容 start */
+.sn-main {
+    height: 58rem;
+    width: 100%;
+}
+
+.sn-main .w .sn-main-top img {
+    width: 100%;
+}
+
+
+.sn-main .sn-main-bottom ul {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(180, 0, 1);
+}
+
+.sn-main .sn-main-bottom ul li {
+    width: 22rem;
+    height: 21.3rem;
+    margin-left: 1.2rem;
+    border: 1px solid rgb(214, 46, 46);
+    /* background-color: #fff; */
+    position: relative;
+}
+
+.sn-main .sn-main-bottom ul li img {
+    width: 12rem;
+    height: 13rem;
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    left:4.5rem;
+    /* background-color: #fff; */
+}
+
+.sn-main .sn-main-bottom ul li p {
+    position: relative;
+    width: 21rem;
+    top: 14rem;
+    text-align: center;
+    color: #fff;
+}
+
+.sn-main .sn-main-bottom ul li a p:nth-child(2) {
+    font-size: 2rem;
+}
+
+.sn-main .sn-main-bottom ul li a p:last-child {
+    margin: 0.8rem auto;
+    color: #ff353f;
+    width: 16rem;
+    height: 2.4rem;
+    font-size: 1.6rem;
+    border: 1px solid #ffffff;
+    background-color: #fff;
+    border-radius: 2rem;
+    line-height: 2.2rem;
+}
+/* 主要内容 end */
+
+
+/* 尾部 start */
+.sn-footer {
+    height: 43rem;
+    width: 100%;
+}
+
+.sn-footer .top {
+    height: 7.5rem;
+}
+
+.sn-footer .top ul {
+    display: flex;
+}
+
+.sn-footer .top ul li {
+    flex: 1;
+    margin: 1rem 0;
+    position: relative;
+    box-sizing: border-box;
+    border-bottom: 1px solid #eaeaea;
+    padding: 0 0 2rem 0;
+}
+
+.sn-footer .top ul li img {
+    float: left;
+}
+
+.sn-footer .top ul li a p {
+    position: absolute;
+    left: 5rem;
+    top: 0.6rem;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #333;
+}
+
+.sn-footer .top ul li p {
+    position: absolute;
+    left: 5rem;
+    top: 2.5rem;
+}
+
+.sn-footer .help {
+    height: 18rem;
+}
+
+.sn-footer .help dl {
+    float: left;
+    width: 8rem;
+    padding-right: 10rem;
+}
+
+.sn-footer .help dl dt {
+    height: 3.5rem;
+    line-height: 4rem;
+    font-size: 1.4rem;
+    color: #545454;
+    overflow: hidden;
+    font-weight: 700;
+}
+
+.sn-footer .help dl dd {
+    padding-top: 0.8rem;
+}
+
+.sn-footer .help dl dd a{ 
+    color: #545454;
+    font-weight: normal;
+    font-size: 1.1rem;
+}
+
+.sn-footer .help dl dd a:hover,
+.sn-footer .help dl dd:last-child a:hover {
+    color: #ff6600;
+}
+
+.sn-footer .help dl dd:last-child a{
+    width: 4rem;
+    color: #333;
+}
+
+.sn-footer .footer {
+    height: 18.5rem;
+    text-align: center;
+}
+
+.sn-footer .footer .up a{
+    display: inline-block;
+    color: #666;
+    box-sizing: border-box;
+    margin-top: 1.5rem;
+}
+
+.sn-footer .footer .up a + a {
+    padding-left: 0.5rem;
+    border-left: 1px solid #666;
+}
+
+.sn-footer .footer .down,
+.sn-footer .footer .down a {
+    margin: 1rem 0;
+    color: #999999;
+}
+
+.sn-footer .footer .down img {
+    height: 1.5rem;
+}
+
+.sn-footer .footer .truth {
+    height: 2rem;
+}
+/* 尾部end */
