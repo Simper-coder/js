@@ -1,0 +1,241 @@
+@charset "utf-8";
+
+* {margin:0;padding:0;box-sizing:border-box;}
+html, body {
+	width:100%;
+	height:100%;
+	min-width:1200px;
+	min-height:600px;
+	overflow:hidden;
+}
+
+ul, li {
+    list-style: none;
+}
+
+body {
+    position:relative;
+	font-family:"Microsoft Yahei", Arial, sans-serif;
+	background:#050d3c url("bg.png") 0 0 / 100% 100% no-repeat;
+}
+
+.sub-title{
+    color: green;
+    font-size: 14px;
+}
+
+#header {
+	position:relative;
+	height:78px;
+	background:url("header.png") 0 0 / 100% 100% no-repeat;
+	overflow:hidden;
+}
+
+.header-title {line-height:50px;text-align:center;font-size:32px;font-weight:400;color:#bef2ff;}
+
+.main #left-bottom{
+    padding-bottom: 20px;   /* 左下方填充 */
+    width: 99%;
+}
+
+.main #left-bottom li {
+    font-size: 16px;
+    margin: 2px;
+    padding: 2px;
+}
+
+.main #left-bottom p{
+    color: green;
+}
+
+.main #left-bottom li .stuff {
+    color: honeydew;
+    font-weight: bold;
+}
+
+.main #left-bottom li .today {
+    color: teal;
+}
+
+.main #left-bottom li .money {
+    color: gold;
+}
+
+
+/* center begin */
+#center .c-header {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+#center div .products {
+    display: inline-block;
+    text-align: center;
+    margin: 10px 10px 10px 50px;
+    padding: 20px 30px 20px 30px;
+    line-height: 2rem;
+    border-top: #4169e1 solid 2px;
+    border-bottom: #4169e1 solid 2px;
+    border-radius: 10px;
+}
+
+#center div .first {
+    margin-left: 220px;  /* 中上左边距 */
+}
+
+#center .week {
+    color: gold;
+}
+
+#center .week-value {
+    color: royalblue;
+}
+
+#center .month {
+    color: seagreen;
+}
+
+#center .month-value {
+    color: #4169e1;
+}
+
+#center .products-title{
+    font-size: large;
+    color: white;
+}
+
+/* center center begin */
+#center .c-center{
+    padding-bottom: 80px;  /* 中下填充*/
+}
+
+#center .c-center table{
+    text-align: center;
+    color: gainsboro;
+}
+
+td, th{
+    border: 1px solid transparent !important;
+    font-weight: bolder;
+}
+
+td {
+    color: #008b8b;
+}
+
+#center .c-center .c-center-bottom {
+    color: white;
+}
+
+#center .c-center .c-center-bottom .c-center-bottom-left {
+    float: left;
+    padding-top: 40px;  /*中上填充*/
+    padding-left: 10px;
+}
+
+#center .c-center .c-center-bottom .c-center-bottom-right{
+    float: right;
+    padding-top: 40px;  /*中上填充*/
+    padding-right: 20px;
+}
+
+
+#center .c-center .c-center-bottom .c-center-bottom-right .box {
+    border: 1px solid;
+    padding: 3px 30px 3px 2px;
+}
+
+#center .c-bottom {
+    margin-top: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
+/* right begin */
+#right {
+    margin-left: 20px;
+}
+
+#right .times {
+    font-size: 50px;
+    font-weight: bold;
+    color: yellowgreen;
+}
+
+#right .stands {
+    font-size: 40px;
+    font-weight: bold;
+    color: whitesmoke;
+}
+
+#right .right-top, .right-content1, .right-content2, .right-bottom{
+    margin-bottom: 50px;  /*右侧填充*/
+    border: #4169e1 solid 1px;
+}
+
+#right .right-top{
+    padding-bottom: 10px;
+}
+
+#right .right-content1{
+    line-height: 4.5rem;
+    padding-bottom:60px;
+}
+
+#right .right-content2{
+    padding-bottom: 40px;
+}
+
+#right .right-bottom{
+    padding-bottom: 20px;
+}
+
+#right .right-content1-content{
+    margin-top: 50px;
+}
+
+#right .right-top-content,.right-content1-content, .r-b-bottom {
+    text-align: center;
+    line-height: 5.5rem;
+}
+
+#right .right-content1 .right-content1-content .aim{
+    font-size: 50px;
+    color: teal;
+}
+
+#right .right-content1 .right-content1-content .result {
+    color: red;
+}
+
+#right .right-content2 .progress {
+    width: 80%;
+}
+
+#right .right-content2 .rev-time {
+    font-size: 30px;
+    font-weight: bold;
+    color: saddlebrown;
+}
+
+
+#right .right-bottom .styleNo {
+    font-size: 35px;
+    font-weight: bold;
+    color: teal;
+}
+
+
+
+/* 设置边框 */
+#left-top, #left-bottom, #center .c-center,#center .c-bottom{
+    border: #4169e1 solid 1px;
+    border-radius: 10px;
+}
+
+#left-bottom{
+    margin-top: 20px;
+    margin-left: -15px;
+    /* margin-right: -15px; */
+}

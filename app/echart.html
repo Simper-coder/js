@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>ECharts</title>
+    <!-- 引入 echarts.js -->
+    <link href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+    <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+    
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script src="https://cdn.staticfile.org/echarts/4.3.0/echarts.min.js"></script>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header id="header">
+        <h3 class="header-title">员工产量表</h3>
+    </header>
+    <div class="main">
+    <div class="container-fluid">
+        <div class="row col-md-2 col-sm-8 chart-container scroll-content">
+            <!-- 左上表 -->
+            <div class="row" id="left-top" style="width: 100%;height:550px;"></div>
+            <div id="left-bottom">
+                <p class="sub-title">员工工资</p>
+                <ul>
+                    <li><span class="stuff">员工F </span>&nbsp;&nbsp;<span class="today">今日： </span><span class="money">100 </span>&nbsp;<span class="today"> 累计: </span><span class="money">1000</span></li>
+                    <li><span class="stuff">员工G </span>&nbsp;&nbsp;<span class="today">今日： </span><span class="money">100 </span>&nbsp;<span class="today"> 累计: </span><span class="money">1000</span></li>
+                    <li><span class="stuff">员工H </span>&nbsp;&nbsp;<span class="today">今日： </span><span class="money">100 </span>&nbsp;<span class="today"> 累计: </span><span class="money">1000</span></li>
+                    <li><span class="stuff">员工I </span>&nbsp;&nbsp;<span class="today">今日： </span><span class="money">100 </span>&nbsp;<span class="today"> 累计: </span><span class="money">1000</span></li>
+                    <li><span class="stuff">员工J </span>&nbsp;&nbsp;<span class="today">今日： </span><span class="money">100 </span>&nbsp;<span class="today"> 累计: </span><span class="money">1000</span></li>
+                    <li><span class="stuff">员工K </span>&nbsp;&nbsp;<span class="today">今日： </span><span class="money">100 </span>&nbsp;<span class="today"> 累计: </span><span class="money">1000</span></li>
+                    <li><span class="stuff">员工L </span>&nbsp;&nbsp;<span class="today">今日： </span><span class="money">100 </span>&nbsp;<span class="today"> 累计: </span><span class="money">1000</span></li>
+                    <li><span class="stuff">员工M </span>&nbsp;&nbsp;<span class="today">今日： </span><span class="money">100 </span>&nbsp;<span class="today"> 累计: </span><span class="money">1000</span></li>
+                    <li><span class="stuff">员工N </span>&nbsp;&nbsp;<span class="today">今日： </span><span class="money">100 </span>&nbsp;<span class="today"> 累计: </span><span class="money">1000</span></li>
+                    <li><span class="stuff">员工O </span>&nbsp;&nbsp;<span class="today">今日： </span><span class="money">100 </span>&nbsp;<span class="today"> 累计: </span><span class="money">1000</span></li>
+                    <li><span class="stuff">员工P </span>&nbsp;&nbsp;<span class="today">今日： </span><span class="money">100 </span>&nbsp;<span class="today"> 累计: </span><span class="money">1000</span></li>
+                    <li><span class="stuff">员工Q </span>&nbsp;&nbsp;<span class="today">今日： </span><span class="money">100 </span>&nbsp;<span class="today"> 累计: </span><span class="money">1000</span></li>
+                    <li><span class="stuff">员工R </span>&nbsp;&nbsp;<span class="today">今日： </span><span class="money">100 </span>&nbsp;<span class="today"> 累计: </span><span class="money">1000</span></li>
+                    <li><span class="stuff">员工S </span>&nbsp;&nbsp;<span class="today">今日： </span><span class="money">100 </span>&nbsp;<span class="today"> 累计: </span><span class="money">1000</span></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div id="center" class="row col-md-8 chart-container scroll-content">
+            <div class="c-header">
+                <div class="products first">
+                    <span class="week">700</span><br/><span class="products-title">本周产量</span>
+                </div>
+                <div class="products">
+                    <span class="week-value">54986</span><br/><span class="products-title">本周产值</span>    
+                </div>
+                <div class="products">
+                    <span class="month">2514</span><br/><span class="products-title">本月产量</span>
+                </div>
+                <div class="products">
+                    <span class="month-value">216547</span><br/><span class="products-title">本月产值</span>
+                </div>                
+            </div>
+
+            <div class="c-center">
+                <h4 class="sub-title">订单信息表</h4>
+                <table class="table table-borderless">
+                    <thead>
+                      <tr>
+                        <th scope="col">款号</th>
+                        <th scope="col">订单数</th>
+                        <th scope="col">当天目标</th>
+                        <th scope="col">完成数</th>
+                        <th scope="col">结余数</th>
+                        <th scope="col">目标达成率(%)</th>
+                        <th scope="col">累计达成率(%)</th>
+                        <th scope="col">良品数</th>
+                        <th scope="col">良品率(%)</th>
+                        <th scope="col">累计良品数</th>
+                        <th scope="col">累计良品率(%)</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>BDM1LD123</td>
+                        <td>400</td>
+                        <td>46</td>
+                        <td>46</td>
+                        <td>100</td>
+                        <td>100%</td>
+                        <td>75%</td>
+                        <td>46</td>
+                        <td>100%</td>
+                        <td>300</td>
+                        <td>100%</td>
+                      </tr>
+                      <tr>
+                        <td>BDM1LD456</td>
+                        <td>577</td>
+                        <td>50</td>
+                        <td>25</td>
+                        <td>574</td>
+                        <td>50%</td>
+                        <td>1%</td>
+                        <td>25</td>
+                        <td>100%</td>
+                        <td>25</td>
+                        <td>100%</td>
+                      </tr>
+                    </tbody>
+                </table>
+                <div class="c-center-bottom">
+                    <div class="c-center-bottom-left">
+                        共<span style="color: greenyellow;"> 2 </span>条数据
+                    </div>
+                    <div class="c-center-bottom-right">
+                        <span class="box">1 </span>&nbsp; /&nbsp;1
+                        <span><p class="up"></p></span>&nbsp;
+                        <span><p class="down"></p></span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 中下表 -->
+            <div class="c-bottom">
+                <div class="row" id="center-bottom" style="width: 100%;height:600px;"></div>
+            </div>
+        </div>
+        <div id="right" class="row col-md-2 chart-container scroll-content">
+            <div class="right-top">
+                <h4 class="sub-title">标准节拍时间</h4>
+                <div class="right-top-content">
+                    <p class="times">7分40秒</p>
+                    <p class="stands">标准节拍</p>
+                </div>
+            </div>
+
+            <div class="right-content1">
+                <h4 class="sub-title">实时产量</h4>
+                <div class="right-content1-content">
+                    <p class="stands date">下午</p>
+                    <p class="aim">目标：<span class="times">28</span></p>
+                    <p class="aim">剩余：<span class="result">12</span></p>
+                </div>
+            </div>
+            <div class="right-content2">
+                <h4 class="sub-title">流水槽倒计时</h4>
+                <p class="rev-time"></p>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 100%;" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div>
+            <div class="right-bottom">
+                <h4 class="sub-title">预备款</h4>
+                <div class="r-b-bottom">
+                    <p class="styleNo">BDM2HD789</p>
+                    <p class="stands">预备款</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        let myChart = echarts.init(document.getElementById('left-top'));
+
+        let option = {
+            title: {
+                text: '员工日产量',
+                textStyle: {
+                    color: 'green',
+                    fontSize: 16
+                }
+            },
+            dataset: {
+                source: [
+                    ['score', 'amount', 'product'],
+                    [50, 50, '员工T'],
+                    [56, 56, '员工S'],
+                    [46, 46, '员工R'],
+                    [53, 53, '员工Q'],
+                    [50, 50, '员工P'],
+                    [56, 56, '员工O'],
+                    [46, 46, '员工N'],
+                    [53, 53, '员工M'],
+                    [50, 50, '员工L'],
+                    [56, 56, '员工K'],
+                    [46, 46, '员工J'],
+                    [53, 53, '员工I'],
+                    [50, 50, '员工H'],
+                    [56, 56, '员工G'],
+                    [46, 46, '员工F'],
+                    [58, 58, '员工E'],
+                    [51, 51, '员工D'],
+                    [47, 47, '员工C'],
+                    [48, 48, '员工B'],
+                    [57, 57, '员工A']
+                ]
+            },
+            grid: {containLabel: true},
+            xAxis: {
+                name: '产量',
+                axisLabel:{
+                    textStyle:{
+                        color:"white",
+                        fontSize: 10
+                     }
+                 },
+                 splitLine:{show: false}
+            },
+            yAxis: {
+                type: 'category',
+                axisLabel:{
+                    interval:0,
+                    rotate:40,
+                    textStyle:{
+                        color:"white",
+                        fontSize: 10
+                     }
+                 }
+            },
+            visualMap: {
+                show: false,
+                orient: 'horizontal',
+                left: 'center',
+                min: 50,
+                max: 60,
+                text: ['高', '低'],
+                dimension: 0,
+                inRange: {
+                    color: ['#D7DA8B', 'red']
+                }
+            },
+            series: [{
+                type: 'bar',
+                encode: {
+                    x: 'amount',
+                    y: 'product'
+                },
+                barWidth : 10,
+                barGap:'50%',
+                itemStyle: {
+                    normal: {
+                        label: {
+                            show: true, 
+                            position: 'right', 
+                            textStyle: {
+                                color: 'white',
+                                fontSize: 18
+                            }
+                        }
+                    }
+                }
+            }]
+        };
+        myChart.setOption(option);
+        window.addEventListener("resize", function () {
+            myChart.resize();
+         });
+    </script>
+
+    <script type="text/javascript">
+        let dom = document.getElementById("center-bottom");
+        let myChart1 = echarts.init(dom);
+
+        let app = {};
+        option = null;
+        let dataAxis = ['员工A', '员工B', '员工C', '员工D', '员工E', '员工F', '员工G', '员工H', '员工I', '员工J', '员工K', '员工L', '员工M', '员工N', '员工O', '员工P', '员工Q', '员工R', '员工S', '员工T','员工U', '员工V', '员工W', '员工X', '员工Y','员工Z'];
+        let data = [8, 7, 6, 9, 7, 6, 5, 7, 8, 5, 9, 8, 7, 6, 7, 8, 9, 8, 6.4, 6.2,7,6.5,8,6.4,7,8];    
+        
+        option = {
+            title: {
+                text: '产线平衡图',
+                textStyle: {
+                    color: 'green',
+                    fontSize: 14
+                },
+                x: 10,
+                y: 3
+            },
+            xAxis: {
+                data: dataAxis,
+                axisLabel: {
+                    interval:0,
+                    rotate:40,
+                    textStyle: {
+                        color: '#fff'
+                    }
+                },
+                axisTick: {
+                    show: false
+                },
+                axisLine: {
+                    show: false
+                },
+                z: 10
+            },
+            yAxis: {
+                name: '节拍时间',
+                nameLocation:'center',
+                nameGap: 30,
+                nameTextStyle: {
+                   color: 'white',
+                   fontSize: 16
+                },
+                axisLine: {
+                    show: false
+                },
+                axisTick: {
+                    show: false
+                },
+                axisLabel: {
+                    textStyle: {
+                        color: 'white',
+                        fontSize: 15
+                    }
+                },
+                splitLine:{show: false}
+            },
+            dataZoom: [
+                {
+                    type: 'inside'
+                }
+            ],
+            series: [
+                { 
+                    type: 'bar',
+                    barWidth: 1,
+                    itemStyle: {
+                        color: 'rgba(0,0,0,0.05)'
+                    },
+                    barGap: '-100%',
+                    barCategoryGap: '40%',
+                    animation: false
+                },
+                {
+                    type: 'bar',
+                    itemStyle: {
+                        color: function(params) {
+                            let index_color = params.value;
+                            if (index_color > 7) {
+                                return 'red';
+                            } else if (index_color > 6.5) {
+                                return 'YellowGreen';
+                            } else {
+                                return '4161e1';
+                            }
+                        }
+                    },
+                    // emphasis: {
+                    //     itemStyle: {
+                    //         color: new echarts.graphic.LinearGradient(
+                    //             0, 0, 0, 1,
+                    //             [
+                    //                 {offset: 0, color: '#2378f7'},
+                    //                 {offset: 0.7, color: '#2378f7'},
+                    //                 {offset: 1, color: '#83bff6'}
+                    //             ]
+                    //         )
+                    //     }
+                    // },
+                    data: data
+                }
+            ]
+        };
+        myChart1.setOption(option)
+        // window.addEventListener("resize", function () {
+        //     myCharts.resize();
+        //  });
+        </script>
+
+        <script>
+            let time_dom = document.getElementsByClassName('rev-time')[0];
+            let date = document.getElementsByClassName('date')[0];
+            let progress_bar = document.getElementsByClassName('progress-bar')[0];
+            
+
+            let maxtime = 6 * 60; 
+            let i = 1;
+            function CountDown() {
+                let now = new Date();
+                let hours = now.getHours();
+                if (hours <= 12) {
+                    date.innerHTML = '上午';
+                }else {
+                    date.innerHTML = '下午';
+                }
+
+                if (maxtime >= 0) {
+                    minutes = Math.floor(maxtime / 60);
+                    seconds = Math.floor(maxtime % 60);
+                    i = i - 1/360;
+                    let res = `倒计时：${minutes} 分 ${seconds} 秒 `;
+                    time_dom.innerHTML = res;
+                    progress_bar.style.width = Math.floor(i * 100) + '%';
+                    progress_bar.innerHTML = Math.floor(i * 100) + '%';
+                    --maxtime;
+                } else{
+                    maxtime = 6 * 60;
+                    i = 0
+                }
+            }
+            setInterval("CountDown()", 1000); 
+
+        </script>
+</body>
+</html>
