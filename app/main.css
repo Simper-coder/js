@@ -170,7 +170,7 @@ td {
 }
 
 #right .right-top, .right-content1, .right-content2, .right-bottom{
-    margin-bottom: 50px;  /*右侧填充*/
+    margin-bottom: 40px;  /*右侧填充*/
     border: #4169e1 solid 1px;
 }
 
