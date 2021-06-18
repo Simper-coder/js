@@ -29,7 +29,8 @@
                 var currentPage = 1;
                 keyword = $(this).val();
                 $(".page-item").remove();
-                var total = getData(keyword, currentPage);
+				if(keyword.trim()!=='')
+					var total = getData(keyword, currentPage);
 
                 laypage.render({
                     elem: 'demo',
