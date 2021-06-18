@@ -31,6 +31,10 @@
                 $(".page-item").remove();
 				if(keyword.trim()!=='')
 					var total = getData(keyword, currentPage);
+				 else{
+                    $(".table").remove();
+                    $("#res").append('');
+				 }
 
                 laypage.render({
                     elem: 'demo',
